@@ -4,7 +4,13 @@ This very simple mock-version of `copado` seeks to allow developers local testin
 
 Currently the functionality is limited to checking if parameters are correct without actually implementing anything but a `console.log` for each correct command.
 
-Supported:
+## Install
+
+```bash
+npm install -g JoernBerkefeld/copado-mock
+```
+
+## Supported options
 
 - `--error-message "your message"` or `-e "your message"`
 - `--result-message "your message"` or `-r "your message"`
@@ -13,7 +19,7 @@ Supported:
 - `--parentid "salesforce id to which a file shall be uploaded to"`
 - `--downloadfiles "temp/file/path.js"`
 
-Examples:
+## Examples
 
 ```bash
 copado --error-message "help, we are sinking!"
