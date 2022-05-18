@@ -7,7 +7,7 @@ Currently the functionality is limited to checking if parameters are correct wit
 ## Install
 
 ```bash
-npm install -g JoernBerkefeld/copado-mock
+npm install -g copado-mock
 ```
 
 ## Supported options
