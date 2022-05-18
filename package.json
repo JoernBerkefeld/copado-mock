@@ -1,6 +1,6 @@
 {
     "name": "copado-mock",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Mock for Copado multi-cloud executable",
     "author": "Jörn Berkefeld",
     "license": "MIT",
@@ -43,6 +43,8 @@
         "prettier-eslint": "14.0.2"
     },
     "lint-staged": {
-        "*.{js,jsx,ts,tsx}": ["eslint --fix"]
+        "*.{js,jsx,ts,tsx}": [
+            "eslint --fix"
+        ]
     }
 }
