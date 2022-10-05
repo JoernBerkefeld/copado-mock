@@ -19,16 +19,18 @@ npm install -g copado-mock
 
 ## Supported options
 
-- `--error-message "your message"` or `-e "your message"`
-- `--result-message "your message"` or `-r "your message"`
-- `--progress "your message"` or `-p "your message"`
-- `--uploadfile "temp/file/path.js"` or `-u "temp/file/path.js"`
-- `--parentid "salesforce id to which a file shall be uploaded to"`
+- `--progress "your message"` (alias: `-p`)
+- `--error-message "your message" -p "Error"` (aliases: `-e`, `--error`) - note that adding `-p` is required!
+- `--result-data "your message" -p "Done"` (alias: `-r`) - note that adding `-p` is required!
+- `--uploadfile "temp/file/path.js" --name "somefile.js" --parentid` (alias: `-u`); adding `--name` seems to be optional
+  - `--name "name of file.js"`
+  - `--parentid "salesforce id to which a file shall be uploaded to"`
 - `--downloadfiles "temp/file/path.js"`
+  - `--parentid "salesforce id to which a file shall be uploaded to"`
 
 ## Examples
 
 ```bash
-copado --error-message "help, we are sinking!"
-copado --uploadfile-message "temp/file/path.js" --parentid 0015500000WOHciAAH
+copado --error-message "help, we are sinking!" -p "Error"
+copado --uploadfile "temp/file/path.js" --parentid "0015500000WOHciAAH" --name "best-file-ever.js"
 ```
