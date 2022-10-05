@@ -1,6 +1,6 @@
 {
     "name": "copado-mock",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Mock for Copado multi-cloud executable",
     "author": "Jörn Berkefeld",
     "license": "MIT",
