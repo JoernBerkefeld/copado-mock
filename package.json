@@ -28,7 +28,7 @@
         "prepare": "husky install"
     },
     "dependencies": {
-        "yargs": "17.6.0"
+        "yargs": "17.6.1"
     },
     "devDependencies": {
         "eslint": "8.24.0",
